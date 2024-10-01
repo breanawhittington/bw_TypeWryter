@@ -1,5 +1,34 @@
+#PiTypeWryter
+Combination of code between TypeWryter & PiWrite. Creating a distraction free writing enviroment that a kindle can be used as the screen. 
+
+Sources:
+(https://github.com/RyWhal/TypeWryter)
+(https://github.com/rberenguel/PiWrite)
+
 # TypeWryter
 TypeWryter is a terminal application designed for distraction free writing. It doesn't allow any fancy editing. You can write and you can backspace, thats it; preventing the urge to go back and edit. Files save on every carriage return.
+
+#PiWrite
+#### What?
+
+Have you ever wanted to use your Kindle Paperwhite to write, even more, with a vim-like editor? This is what PiWrite is for.
+
+#### How?
+
+The TL;DR is _a webserver running somewhere a keyboard can be plugged, and a page opened in the Kindle's web browser_.
+
+The not-so-short version requires more effort and details, but is the UX I wanted to get:
+
+- A **Raspberry Pi Zero W**…
+- Paired with a **Bluetooth keyboard**…
+- Set up in **access point mode**…
+- With **this package** installed…
+- And configured to **start automatically** on boot.
+
+#### Why?
+
+I was inspired by [SolarWriter by Michael Solomon](https://solarwriter.msol.io). I had always wanted to use my Kindle for writing. SolarWriter solves that by setting up a local web server on your phone (iOS or Android), then you type with a Bluetooth keyboard paired with it. But you need to set up hotspot, keep your screen on… I didn't like those parts. So I wrote this.
+
 
 This code is a heavily modified version of [zerowriter](https://github.com/zerowriter/zerowriter1/tree/main) since they had a very good head start on developing this sort of project. Their project is awesome, but is a little different and will have a somewhat different featureset.  
  
