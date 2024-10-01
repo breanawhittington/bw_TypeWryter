@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TypeWryter</title>
+</head>
+<body>
+    <textarea id="editor" rows="20" cols="80"></textarea>
+    <div id="wordCount">Word Count: 0</div>
+
+    <script>
+        const editor = document.getElementById('editor');
+        const wordCountDiv = document.getElementById('wordCount');
+
+        editor.addEventListener('input', function () {
+            const words = editor.value.split(/\s+/).filter((word) => word.length > 0);
+            wordCountDiv.innerText = `Word Count: ${words.length}`;
+        });
+    </script>
+</body>
+</html>
